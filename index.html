@@ -31,7 +31,8 @@
             </li>
                 <li class="item"><a class="header-link" href="mailto:http:/info@devstudio.com/"> 
                     <svg class="icon-mail"><use href="./images/symbol-defs.svg#envelope"></use></svg> info@devstudio.com</a>
-                </li>   
+                </li>
+            </ul> 
             </div>
     </header>
      <!--Герой-->
@@ -39,9 +40,9 @@
          <section class="section-hero">
              <div class="conteiner">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="button" type="button">Заказать услугу</button>
+                <button class="button" type="button" data-modal-open>Заказать услугу</button>
+                </div>
                 </section>
-        </div>
     <!--особенности-->
         <section class="section features">
             <div class="conteiner">
@@ -68,21 +69,17 @@
         <section class="section-work">
             <div class="conteiner">
             <h2 class="work-title">Чем мы занимаемся</h2>
-                <ul class="work-list">
-                <div class="box-relative">
-                        <li class="item">
-                            <img src="./images/box1.jpg" width="370" alt="написание кода"></li>
-                            <div class="box-absolute">  <p class="discription-text">десктопные приложения</p></div>
-                        </div>
-                            
-                <div class="box-relative">
-                   <li class="item"> <img src="./images/box2.jpg" width="370" alt="разработка приложений"></li>
-                   <div class="box-absolute"><p class="discription-text">мобильные приложения</p></div>
-                </div>
-                <div class="box-relative">
-                   <li class="item"> <img src="./images/box3.jpg" width="370" alt="дизайн"></li>
-                   <div class="box-absolute"><p class="discription-text">дизайнерские решения</p></div>
-                </div>
+            <ul class="work-list">
+                <li class="work-item">
+                            <img src="./images/box1.jpg" width="370" alt="написание кода">
+                                <div class="box-absolute">  <p class="discription-text">десктопные приложения</p></div>
+                </li>
+                   <li class="work-item"> <img src="./images/box2.jpg" width="370" alt="разработка приложений">
+                        <div class="box-absolute"><p class="discription-text">мобильные приложения</p></div>
+                   </li>
+                   <li class="work-item"> <img src="./images/box3.jpg" width="370" alt="дизайн">
+                        <div class="box-absolute"><p class="discription-text">дизайнерские решения</p></div>
+                   </li>
                 </ul>
                 </div>
         </section>
@@ -98,7 +95,7 @@
                                     <p class="team-profession" lang="en">Product Designer</p>
                                     <div class="social">
                                         <ul class="list-social">
-                                    <li class="element-social"><a class="link-icon" href=""><svg class="icon-instagram">
+                                    <li class="element-social"><a class="link-icon" href=""><svg class="icon-instagram" width="20" height="20">
                                         <use href="./images/symbol-defs.svg#instagram"></use>
                                     </svg></a></li>
                                 <li class="element-social"> <a class="link-icon" href=""><svg class="icon-twitter" width="20" height="20"><use href="./images/symbol-defs.svg#twitter"></use></svg></a></li>
@@ -119,7 +116,7 @@
                                     <p class="team-profession" lang="en">Frontend Developer</p>
                                     <div class="social">
                                         <ul class="list-social">
-                                        <li class="element-social"><a class="link-icon" href=""><svg class="icon-instagram">
+                                        <li class="element-social"><a class="link-icon" href=""><svg class="icon-instagram" width="20" height="20">
                                                 <use href="./images/symbol-defs.svg#instagram"></use>
                                             </svg></a></li>
                                     <li class="element-social"> <a class="link-icon" href=""><svg class="icon-twitter" width="20" height="20">
@@ -142,7 +139,7 @@
                                     <p class="team-profession" lang="en">Marketing</p>
                                     <div class="social">
                                         <ul class="list-social">
-                                       <li class="element-social"> <a class="link-icon" href=""><svg class="icon-instagram">
+                                       <li class="element-social"> <a class="link-icon" href=""><svg class="icon-instagram" width="20" height="20">
                                                 <use href="./images/symbol-defs.svg#instagram"></use>
                                             </svg></a></li>
                                     <li class="element-social"> <a class="link-icon" href=""><svg class="icon-twitter" width="20" height="20">
@@ -224,7 +221,7 @@
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal"><button data-modal-close class="modal-button"><svg class="icon-close"><use href="./images/symbol-defs.svg#close-black"></use></svg></button></div>
+        <div class="modal"><button class="modal-button" type="button" data-modal-close><svg class="icon-close"><use href="./images/symbol-defs.svg#close-black"></use></svg></button></div>
     </div>
     <script src="./js/modal.js"></script>
 </body>
