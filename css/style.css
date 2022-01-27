@@ -70,6 +70,9 @@ header {
   height: 12px;
   fill: var(--primary-text-color);
   margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-mail {
@@ -77,6 +80,9 @@ header {
   height: 12px;
   fill: var(--primary-text-color);
   margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-nav .item + .item {
@@ -726,6 +732,9 @@ button:hover,
   align-items: center;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-clients + .link-clients {
@@ -969,7 +978,7 @@ address {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition-property: background-color, fill;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -986,15 +995,7 @@ address {
   fill: var(--basic-white-color);
 }
 
-.footer-social:hover > .icon-instagram {
-  fill: var(--basic-white-color);
-}
-
 .footer-social > .icon-twitter {
-  fill: var(--basic-white-color);
-}
-
-.footer-social:hover > .icon-twitter {
   fill: var(--basic-white-color);
 }
 
@@ -1002,36 +1003,12 @@ address {
   fill: var(--basic-white-color);
 }
 
-.footer-social:hover > .icon-facebook {
-  fill: var(--basic-white-color);
-}
-
 .footer-social > .icon-linkedin {
-  fill: var(--basic-white-color);
-}
-
-.footer-social:hover > .icon-linkedin {
   fill: var(--basic-white-color);
 }
 
 .footer-social:focus {
   background-color: var(--acent-color);
-}
-
-.footer-social:focus > .icon-instagram {
-  fill: var(--basic-white-color);
-}
-
-.footer-social:focus > .icon-twitter {
-  fill: var(--basic-white-color);
-}
-
-.footer-social:focus > .icon-facebook {
-  fill: var(--basic-white-color);
-}
-
-.footer-social:focus > .icon-linkedin {
-  fill: var(--basic-white-color);
 }
 
 .list-social {
@@ -1049,6 +1026,9 @@ address {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
